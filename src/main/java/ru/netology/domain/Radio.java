@@ -1,5 +1,10 @@
 package ru.netology.domain;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data @AllArgsConstructor @NoArgsConstructor
 public class Radio {
     private int numberOfStations;
     private int stationNumber;
@@ -31,15 +36,6 @@ public class Radio {
             stationNumber = numberOfStations;
         } else
             stationNumber--;
-    }
-
-    public Radio() {
-    }
-
-    public Radio(int numberOfRadioStations, int stationNumber, int volume) {
-        this.numberOfStations = numberOfRadioStations;
-        this.stationNumber = stationNumber;
-        this.volume = volume;
     }
 
     public int getStationNumber() {
